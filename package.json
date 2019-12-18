@@ -1,5 +1,5 @@
 {
-  "homepage" : "https://ppprues.web.app",
+  "homepage": "https://ppprues.web.app",
   "name": "ppprues",
   "version": "0.1.0",
   "private": true,
@@ -15,7 +15,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "firebase deploy"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -31,5 +32,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "tslint": "^5.20.1",
+    "typescript": "^3.2.2",
+    "firebase-functions-test": "^0.1.6"
   }
 }
