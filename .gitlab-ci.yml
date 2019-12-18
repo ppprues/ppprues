@@ -5,19 +5,22 @@ stages:
   - deploy
 
 cache:
-  key: node_modules
+  key: ${CI_COMMIT_REF_SLUG}
   paths:
     - node_modules
     - functions/node_modules
 
 pre:
   script:
-    - rm -rf "%CACHE_PATH%/%CI_PIPELINE_ID%"
     - npm install
     - cd functions
     - npm install
     - cd ..
   stage: .pre
+  artifacts:
+    paths:
+      - node_modules
+      - functions/node_modules
 
 build:
   script:
@@ -25,6 +28,9 @@ build:
   stage: build
   only:
     - master
+  artifacts:
+    paths:
+      - build
 
 deploy:
   script:
