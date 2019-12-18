@@ -5,7 +5,57 @@ cache:
     - node_modules/
     - app/bower_components
 
+<<<<<<< HEAD
 deploy_production:
+=======
+stages:
+  - cd_functions
+  - functions_install
+  - install
+  - build
+  - deploy
+
+cd_functions:
+  stage: cd_functions
+  only:
+    - master
+  script:
+    - cd functions
+
+functions_install:
+  stage: functions_install
+  only:
+    - master
+  script:
+    - yarn install
+  artifacts:
+    paths:
+      - node_modules
+
+install:
+  stage: install
+  only:
+    - master
+  script:
+    - yarn install
+  artifacts:
+    paths:
+      - node_modules
+
+build:
+  stage: build
+  only:
+    - master
+  script:
+    - yarn run build
+  dependencies:
+    - install
+  artifacts:
+    paths:
+      - build
+
+deploy:
+>>>>>>> master
   stage: deploy
   environment: Production
   only:
