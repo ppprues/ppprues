@@ -18,10 +18,6 @@ pre:
     - npm install
     - cd ..
   stage: .pre
-  artifacts:
-    paths:
-      - node_modules/
-      - functions/node_modules
 
 build:
   script:
@@ -32,7 +28,7 @@ build:
 
 deploy:
   script:
-    - firebase deploy -m "Pipeline $CI_PIPELINE_ID, build $CI_BUILD_ID" --non-interactive --token $FIREBASE_TOKEN --project $FIREBASE_PROJECT_ID
+    - npm run deploy
   stage: deploy
   only:
     - master
