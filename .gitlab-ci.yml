@@ -6,9 +6,28 @@ cache:
     - node_modules
 
 stages:
+  - cd_functions
+  - functions_install
   - install
   - build
   - deploy
+
+cd_functions:
+  stage: cd_functions
+  only:
+    - master
+  script:
+    - cd functions
+
+functions_install:
+  stage: functions_install
+  only:
+    - master
+  script:
+    - yarn install
+  artifacts:
+    paths:
+      - node_modules
 
 install:
   stage: install
