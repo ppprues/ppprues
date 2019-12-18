@@ -32,7 +32,6 @@ build:
     paths:
       - build
 
-
 deploy:
   script:
     - npm install -g firebase-tools
