@@ -1,0 +1,76 @@
+[debug] [2019-12-19T10:48:19.414Z] ----------------------------------------------------------------------
+[debug] [2019-12-19T10:48:19.416Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2019-12-19T10:48:19.416Z] CLI Version:   7.10.0
+[debug] [2019-12-19T10:48:19.416Z] Platform:      darwin
+[debug] [2019-12-19T10:48:19.416Z] Node Version:  v12.13.0
+[debug] [2019-12-19T10:48:19.417Z] Time:          Thu Dec 19 2019 17:48:19 GMT+0700 (Indochina Time)
+[debug] [2019-12-19T10:48:19.417Z] ----------------------------------------------------------------------
+[debug] [2019-12-19T10:48:19.418Z] 
+[debug] [2019-12-19T10:48:19.428Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-12-19T10:48:19.428Z] > authorizing via signed-in user
+[debug] [2019-12-19T10:48:19.428Z] [iam] checking project ppprues for permissions ["firebase.projects.get"]
+[debug] [2019-12-19T10:48:19.429Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-12-19T10:48:19.429Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2019-12-19T10:48:19.641Z] <<< HTTP RESPONSE 200
+[debug] [2019-12-19T10:48:19.657Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/ppprues:testIamPermissions  
+
+[debug] [2019-12-19T10:48:20.870Z] <<< HTTP RESPONSE 200
+[debug] [2019-12-19T10:48:20.872Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/ppprues  
+ 
+[debug] [2019-12-19T10:48:21.227Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/p.jittipanyakul/ppprues'...
+[info] 
+[debug] [2019-12-19T10:48:21.231Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/ppprues/webApps/-/config  
+ 
+[warn] ⚠  Your requested "node" version "8" doesn't match your global version "12"
+[info] ✔  functions: Emulator started at http://localhost:5001
+[debug] [2019-12-19T10:48:22.255Z] <<< HTTP RESPONSE 200
+[info] i  functions: Watching "/Users/p.jittipanyakul/ppprues/functions" for Cloud Functions...
+[debug] [2019-12-19T10:48:22.278Z] [worker-~diagnostic~-d6e95aa5-3066-4fb2-8a91-7c77f007a3c6]: Assigning socketPath: /var/folders/z1/bp26sbgx0653611c5d_vbgl00000gn/T/fire_emu_51930.sock
+[debug] [2019-12-19T10:48:22.279Z] [worker-~diagnostic~-d6e95aa5-3066-4fb2-8a91-7c77f007a3c6]: BUSY
+[info] i  hosting: Serving hosting files from: build
+[info] ✔  hosting: Local server: http://localhost:5000
+[debug] [2019-12-19T10:48:22.455Z] [runtime-status] [51930] Functions runtime initialized. {"cwd":"/Users/p.jittipanyakul/ppprues/functions","node_version":"12.13.0"}
+[debug] [2019-12-19T10:48:22.456Z] [runtime-status] [51930] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[warn] ⚠  The Cloud Functions emulator requires the module "firebase-admin" to be installed. This package is in your package.json, but it's not available. You probably need to run "npm install" in your functions directory.
+[info] i  functions: Your functions could not be parsed due to an issue with your node_modules (see above)
+[debug] [2019-12-19T10:48:22.475Z] [worker-~diagnostic~-d6e95aa5-3066-4fb2-8a91-7c77f007a3c6]: exited
+[debug] [2019-12-19T10:48:22.475Z] [worker-~diagnostic~-d6e95aa5-3066-4fb2-8a91-7c77f007a3c6]: FINISHED
+[debug] [2019-12-19T10:50:03.689Z] ----------------------------------------------------------------------
+[debug] [2019-12-19T10:50:03.691Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2019-12-19T10:50:03.691Z] CLI Version:   7.10.0
+[debug] [2019-12-19T10:50:03.691Z] Platform:      darwin
+[debug] [2019-12-19T10:50:03.691Z] Node Version:  v12.13.0
+[debug] [2019-12-19T10:50:03.692Z] Time:          Thu Dec 19 2019 17:50:03 GMT+0700 (Indochina Time)
+[debug] [2019-12-19T10:50:03.693Z] ----------------------------------------------------------------------
+[debug] [2019-12-19T10:50:03.693Z] 
+[debug] [2019-12-19T10:50:03.702Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-12-19T10:50:03.702Z] > authorizing via signed-in user
+[debug] [2019-12-19T10:50:03.702Z] [iam] checking project ppprues for permissions ["firebase.projects.get"]
+[debug] [2019-12-19T10:50:03.704Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/ppprues:testIamPermissions  
+
+[debug] [2019-12-19T10:50:05.259Z] <<< HTTP RESPONSE 200
+[debug] [2019-12-19T10:50:05.261Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/ppprues  
+ 
+[debug] [2019-12-19T10:50:06.072Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/p.jittipanyakul/ppprues'...
+[info] 
+[debug] [2019-12-19T10:50:06.075Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/ppprues/webApps/-/config  
+ 
+[warn] ⚠  Your requested "node" version "8" doesn't match your global version "12"
+[info] ✔  functions: Emulator started at http://localhost:5001
+[debug] [2019-12-19T10:50:07.123Z] <<< HTTP RESPONSE 200
+[info] i  functions: Watching "/Users/p.jittipanyakul/ppprues/functions" for Cloud Functions...
+[debug] [2019-12-19T10:50:07.144Z] [worker-~diagnostic~-7fe421d3-3702-4727-a455-e015974adeae]: Assigning socketPath: /var/folders/z1/bp26sbgx0653611c5d_vbgl00000gn/T/fire_emu_53276.sock
+[debug] [2019-12-19T10:50:07.144Z] [worker-~diagnostic~-7fe421d3-3702-4727-a455-e015974adeae]: BUSY
+[info] i  hosting: Serving hosting files from: build
+[info] ✔  hosting: Local server: http://localhost:5000
+[debug] [2019-12-19T10:50:07.326Z] [runtime-status] [53276] Functions runtime initialized. {"cwd":"/Users/p.jittipanyakul/ppprues/functions","node_version":"12.13.0"}
+[debug] [2019-12-19T10:50:07.327Z] [runtime-status] [53276] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[warn] ⚠  The Cloud Functions emulator requires the module "firebase-admin" to be installed. This package is in your package.json, but it's not available. You probably need to run "npm install" in your functions directory.
+[info] i  functions: Your functions could not be parsed due to an issue with your node_modules (see above)
+[debug] [2019-12-19T10:50:07.343Z] [worker-~diagnostic~-7fe421d3-3702-4727-a455-e015974adeae]: exited
+[debug] [2019-12-19T10:50:07.343Z] [worker-~diagnostic~-7fe421d3-3702-4727-a455-e015974adeae]: FINISHED
