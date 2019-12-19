@@ -19,10 +19,9 @@
       "**/.*",
       "**/node_modules/**"
     ],
-    "redirects": [ {
-      "source": "/*",
-      "destination": "/",
-      "type": 302
+    "rewrites": [ {
+      "source": "**",
+      "destination": "/index.html"
     } ]
   },
   "storage": {
