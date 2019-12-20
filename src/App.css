@@ -36,3 +36,43 @@
 .App-social-logo {
   height: 5vmin;
 }
+
+.fade-1-appear {
+  opacity: 0.01;
+}
+
+.fade-1-appear.fade-1-appear-active {
+  opacity: 1;
+  transition: opacity .5s ease-in;
+  transition-delay: .5s;
+}
+
+.fade-2-appear {
+  opacity: 0.01;
+}
+
+.fade-2-appear.fade-2-appear-active {
+  opacity: 1;
+  transition: opacity .5s ease-in;
+  transition-delay: 1s;
+}
+
+.fade-3-appear {
+  opacity: 0.01;
+}
+
+.fade-3-appear.fade-3-appear-active {
+  opacity: 1;
+  transition: opacity .5s ease-in;
+  transition-delay: 1.5s;
+}
+
+.fade-4-appear {
+  opacity: 0.01;
+}
+
+.fade-4-appear.fade-4-appear-active {
+  opacity: 1;
+  transition: opacity .5s ease-in;
+  transition-delay: 2s;
+}
