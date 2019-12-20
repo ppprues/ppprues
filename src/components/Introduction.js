@@ -38,6 +38,11 @@ function Introduction() {
               <img src={require("../assets/linkedin512.svg")} alt="LinkedIn" className="App-social-logo" />
             </a>
           </div>
+          <div>
+            <a href="mailto:p.jittipanyakul@gmail.com" target="_blank" rel="noopener noreferrer">
+              <img src={require("../assets/mail512.svg")} alt="Mail" className="App-social-logo" />
+            </a>
+          </div>
         </div>
       </CSSTransitionGroup>
     </div>
