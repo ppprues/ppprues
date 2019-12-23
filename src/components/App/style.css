@@ -1,0 +1,25 @@
+.App {
+  background-color: #000000;
+  text-align: center;
+  color: white;
+}
+
+.App-header {
+  background-color: #323232;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  padding-left: 5vh;
+  padding-right: 5vh;
+}
+
+.App-header-more {
+  align-self: auto;
+}
+
+.App-header-more-logo {
+  height: 5vmin;
+}

@@ -1,0 +1,73 @@
+.Header {
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.Header-logo {
+  height: 40vmin;
+  pointer-events: none;
+  border-radius: 50%;
+}
+
+.Header-social-box {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  margin-top: 5vh;
+}
+
+.Header-social-box > div > a > img {
+  height: 5vmin;
+}
+
+.fade-profile-appear {
+  opacity: 0;
+}
+
+.fade-profile-appear.fade-profile-appear-active {
+  opacity: 1;
+  transition: opacity 0.5s ease-in;
+  transition-delay: 0.5s;
+}
+
+.fade-name-appear {
+  opacity: 0;
+}
+
+.fade-name-appear.fade-name-appear-active {
+  opacity: 1;
+  transition: opacity 0.5s ease-in;
+  transition-delay: 1s;
+}
+
+.fade-username-appear {
+  opacity: 0;
+}
+
+.fade-username-appear.fade-username-appear-active {
+  opacity: 1;
+  transition: opacity 0.5s ease-in;
+  transition-delay: 1.5s;
+}
+
+.fade-social-appear {
+  opacity: 0;
+}
+
+.fade-social-appear.fade-social-appear-active {
+  opacity: 1;
+  transition: opacity 0.5s ease-in;
+  transition-delay: 2s;
+}
+
+.fade-scroll-appear {
+  opacity: 0;
+}
+
+.fade-scroll-appear.fade-scroll-appear-active {
+  opacity: 1;
+  transition: opacity 0.5s ease-in;
+  transition-delay: 2.5s;
+  animation: bounce;
+}
