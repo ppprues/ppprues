@@ -69,5 +69,4 @@
   opacity: 1;
   transition: opacity 0.5s ease-in;
   transition-delay: 2.5s;
-  animation: bounce;
 }
