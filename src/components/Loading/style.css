@@ -19,9 +19,3 @@
   transition: opacity 0.5s ease-in;
   transition-delay: 0.5s;
 }
-
-.fade-profile-appear.fade-profile-appear-active {
-    opacity: 1;
-    transition: opacity 0.5s ease-in;
-    
-  }
